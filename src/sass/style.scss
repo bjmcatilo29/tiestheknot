@@ -1,0 +1,57 @@
+@import 'vendor/normalize';
+
+// Varialbe and Mixins
+@import 'global/variable';
+@import 'global/mixin';
+
+// Base Style 
+@import 'global/default';
+@import 'global/helper';
+
+// Third party
+@import 'vendor/jquery.fullPage';
+
+// Site</div>
+@import 'section/header';
+@import 'components/info-home';
+@import 'components/info-project';
+@import 'components/info-newsletter';
+@import 'components/info-faq';
+@import 'components/info-contact';
+
+// Layout
+.container {
+	width: $container-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// fullPagejs Sections
+.section {
+	// padding: 145px 0 0;
+	padding: 106px 0 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+#section0 {
+	padding-top: 228px;
+	background-image: url(../images/storm_makati.jpg);
+}
+
+#section1 {
+	// background-image: url(../images/bg_rcbc_inside.jpg);
+}
+
+#section2 {
+	// background-image: url(../images/bg_rcbc_inside.jpg);
+}
+
+#section3 {
+	// background-image: url(../images/bg_rcbc_inside.jpg);
+}
+
+#section4 {
+	background-image: url(../images/bg_rcbc.jpg);
+}

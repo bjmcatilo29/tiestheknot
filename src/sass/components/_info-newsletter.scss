@@ -1,0 +1,39 @@
+.info-newsletter {
+	
+	&-object {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	&-body {
+		width: $container-width;
+		margin: 0 auto;
+	}
+
+	&-title {
+		margin-bottom: 5px;
+		color: #000;
+		font-family: $font-open-sans;
+		font-size: 30px;
+	}
+
+	&-meta {
+		color: #808080;
+		font-size: 13px;
+
+		&:before {
+			display: inline-block;
+			content: "";
+			width: 16px;
+			height: 16px;
+			margin-right: 10px;
+			background: url(../images/sprite.png) no-repeat -40px -20px;
+			vertical-align: text-bottom;
+		}
+	}
+}
+
+// 
+.fp-tableCell {
+	height: auto !important;
+}

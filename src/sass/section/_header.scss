@@ -1,0 +1,41 @@
+// Style 1
+// .header {
+//     position: fixed;
+//     z-index: 99;
+//     width: 100%;
+//     background: #fff;
+// }
+
+// Style 2
+// .header {
+// 	@include box-shadow(0 0 2px rgba(0,0,0,0.1));
+//     position: fixed;
+//     z-index: 99;
+//     min-width: $container-min-width;
+//     width: 100%;
+//     padding: 1px 0;
+//     border-top: 1px solid #efefef;
+// 	border-bottom: 1px solid #efefef;
+//     background: #fff;
+// }
+
+
+// Style 3
+.header {
+	@include transition(all .8s);
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    background: #fff;
+
+    &.sticky {
+    	@include box-shadow(0 0 2px rgba(0,0,0,0.1));
+	    min-width: $container-min-width;
+	    padding: 1px 0;
+	    border-top: 1px solid #efefef;
+		border-bottom: 1px solid #efefef;
+    }
+}
+
+@import '../components/logo';
+@import '../components/navigation';

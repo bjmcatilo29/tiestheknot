@@ -1,0 +1,66 @@
+// Style 1
+.logo {
+    @include transition(all .8s);
+	position: relative;
+    width: 100%;
+    margin: 10px 0 0;
+    text-align: center;
+
+    a,
+    span {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        width: 189px;
+        height: 110px;
+        margin: 20px auto;
+        text-indent: -9999px;
+    }
+    
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
+
+// Style 2
+// .logo {
+// 	float: left;
+// 	position: relative;
+//     margin: 14px 0 7px 35px;
+
+//     a,
+//     span {
+//         position: relative;
+//         overflow: hidden;
+//         display: inline-block;
+//         width: 122px;
+//         height: 70px;
+//         text-indent: -9999px;
+//     }
+    
+//     img {
+//         position: absolute;
+//         left: 0;
+//         top: 0;
+//         width: 100%;
+//     }
+// }
+
+
+// Style 3
+.sticky .logo {
+    float: left;
+    width: auto;
+    margin: 14px 0 7px $side-gap;
+    text-align: left;
+
+    a,
+    span {
+        width: 122px;
+        height: 70px;
+        margin: 0;
+    }
+}
