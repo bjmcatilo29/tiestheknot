@@ -411,7 +411,7 @@ body {
   background: #fff;
   color: #000;
   font-weight: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Ranga', cursive;
   font-size: 15px;
   line-height: 22px;
   text-decoration: none;
@@ -453,10 +453,10 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 35px;
-  color: #a22853;
+  font-size: 45px;
+  color: #000;
   font-weight: bold;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Shadows Into Light Two', cursive;
   line-height: normal;
 }
 
@@ -464,7 +464,7 @@ h3, .h3 {
   font-size: 30px;
   color: #a22853;
   font-weight: bold;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Ranga', cursive;
   line-height: normal;
 }
 
@@ -1745,7 +1745,7 @@ html.fp-enabled,
   line-height: 55px;
   margin: 0 30px;
   color: #fff;
-  font-size: 16px;
+  font-size: 30px;
   font-family: myriad-pro, "Open Sans" Arial, Helvetica, sans-serif;
   /*text-transform: uppercase;*/
   text-decoration: none;
@@ -1764,7 +1764,7 @@ html.fp-enabled,
 
   float: right;
   width: auto;
-  margin: 20px 7.65217% 0 0;
+  margin: 30px 7.65217% 0 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -1984,6 +1984,12 @@ html.fp-enabled,
   background-position: center bottom;
 }
 
+.section p {
+  font-family: 'Khand', sans-serif;
+  font-size: 26px;
+  line-height: 1.25em;
+}
+
 #section0 {
   /*padding-top: 228px;*/
   background: #000;
@@ -2002,23 +2008,32 @@ html.fp-enabled,
 }
 
 #section1 {
-  background-image: url(../images/engagement-12.jpg);
+  /* background-image: url(../images/engagement-12.jpg); */
+  background: #fff;
 }
 
 #section2 {
-  background-image: url(../images/engagement-8.jpg);
+ /* background-image: url(../images/engagement-8.jpg); */
+ background: #fff;
 }
 
 #section3 {
-  background-image: url(../images/engagement-9.jpg);
+ /* background-image: url(../images/engagement-9.jpg); */
+ background: #fff;
 }
 
 #section4 {
-  background-image: url(../images/engagement-10.jpg);
+ /* background-image: url(../images/engagement-10.jpg); */
+ background: #fff;
 }
 
 #section5 {
-  background-image: url(../images/engagement-11.jpg);
+  /*background-image: url(../images/engagement-11.jpg); */
+  background: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
+
+#nav-hidden {
+  display:none;
+}

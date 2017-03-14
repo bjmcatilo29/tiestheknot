@@ -3277,13 +3277,15 @@
     slimscroll: jQuery.fn.slimScroll
   });
 
-})(jQuery);;$(document).ready(function() {
+})(jQuery);
+
+$(document).ready(function() {
 
 	/** 
 	 * jQuery fullPagejs
 	 */
     $('#fullpage').fullpage({
-        anchors: ['link0', 'link1', 'link2', 'link3', 'link4', 'link5'],
+        anchors: ['home', 'heading', 'about-us', 'venue', 'registry', 'rsvp'],
         menu: '#nav',
         loopTop: false,
         loopBottom: false,
@@ -3292,10 +3294,10 @@
         css3: true,
         scrollBar: true,
         afterLoad: function() {
-            $(this).find('h1').addClass('animated fadeInDownBig');
+           // $(this).find('h1').addClass('animated fadeInDownBig');
         },
         onLeave: function() {
-            $(this).find('h1').removeClass('animated fadeInDownBig');
+          //  $(this).find('h1').removeClass('animated fadeInDownBig');
         }
     });
 
