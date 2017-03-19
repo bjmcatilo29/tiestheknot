@@ -10,15 +10,17 @@
         <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/style.css">
 
-        <script src="js/head.concat.js"></script>
+        <script src="js/head.min.js"></script>
     </head>
     <body>
 
         <header class="header">
             <h1 class="logo"><span>Bismark and Joanna <img src="images/bismark_and_joanna.png" width="" height="" alt=""></span></h1>
-            <nav id="nav" class="nav hidden">
+            <a href="#" class="mobile-menu"><span class="fa fa-bars"></span></a>
+            <nav id="nav" class="nav animated">
                 <ul>
                     <!-- <li data-menuanchor="home" class="active"><a href="#home">Home</a></li> -->
                     <li data-menuanchor="heading" id="nav-hidden"><a href="#wtf-lol">WTF LOL</a></li>
@@ -47,9 +49,15 @@
                      <p>We invite you to celebrate with us on <strong>June 17, 2017</strong> at <strong>Twelve thirty in the afternoon</strong>!</p>
                 </div>
             </div>
-            <div class="section" id="section1">
+            <div class="section section-about" id="section1">
                 <div class="container">
-                    <h2>About</h2>
+                    <h2 class="text-center">About</h2>
+                    <p class="clearfix">
+                        <img src="images/about_joanna.jpg" width="" height="" alt="" class="about-img-left img-circle">
+                        <img src="images/about_bismark.jpg" width="" height="" alt="" class="about-img-right img-circle">
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nulla reiciendis, dolorum quod vel vero voluptate. Perspiciatis ducimus nam adipisci doloremque sunt tenetur, eos in?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, eaque.</p>
                 </div>
             </div>
             <div class="section" id="section2">
@@ -99,6 +107,6 @@
                 </div>
             </div>
         </main>
-        <script src="js/script.concat.js"></script>
+        <script src="js/script.min.js"></script>
     </body>
 </html>

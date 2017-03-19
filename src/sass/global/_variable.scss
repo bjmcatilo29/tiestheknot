@@ -1,11 +1,14 @@
 // Resonsive Design Break Points
-$tablet-breakpoint:     768px;
+$tablet-breakpoint:         768px;
+$desktop-breakpoint:        1025px;
+$largedesktop-breakpoint:   1300px;
 
 // Overall Layout
 $container-width:		84.69565217391304%; // 974px of 1150px
 $container-max-width:	inherit;
 $container-min-width:	auto;
 $side-gap:				7.652173913043478%; // 88px of 1150px
+$header-height:         110px;
 
 // Default Fonts
 $default-font-family:		'Ranga', cursive;

@@ -14,11 +14,7 @@
 
 // Site</div>
 @import 'section/header';
-@import 'components/info-home';
-@import 'components/info-project';
-@import 'components/info-newsletter';
-@import 'components/info-faq';
-@import 'components/info-contact';
+@import 'components/section-about';
 
 // Layout
 .container {
@@ -29,11 +25,13 @@
 
 // fullPagejs Sections
 .section {
-	// padding: 145px 0 0;
-	padding: 106px 0 0;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
+
+	.container {
+		padding-top: $header-height;
+	}
 
 	p {
 		font-family: 'Khand', sans-serif;
@@ -57,6 +55,7 @@
 	}
 }
 
+// About use
 #section1 {
 	background: $white;
 }

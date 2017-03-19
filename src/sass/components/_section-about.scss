@@ -1,0 +1,38 @@
+.section-about {
+	
+    .about-img-left,
+    .about-img-right {
+        width: 45%;
+        max-width: 323px;
+    }
+
+    .about-img-left {
+        float: left;
+    }
+
+    .about-img-right {
+        float: right
+    }
+
+    @include media(">=largedesktop") {
+        .container {
+            width: 45%;
+        }
+
+        .about-img-left,
+        .about-img-right {
+            position: absolute;
+            top: 50%;
+            float: none;
+            margin-top: -161px + ($header-height/2);
+        }
+
+        .about-img-left {
+            left: 20px;
+        }
+
+        .about-img-right {
+            right: 20px;
+        }
+    }
+}

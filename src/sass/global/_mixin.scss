@@ -22,7 +22,9 @@ $media-expressions: (
 
 $breakpoints: (
 	'mobile': 0,
-	'tablet': $tablet-breakpoint
+	'tablet': $tablet-breakpoint,
+	'desktop': $desktop-breakpoint,
+	'largedesktop': $largedesktop-breakpoint,
 );
 
 // mobile
