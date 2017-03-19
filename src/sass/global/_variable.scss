@@ -4,38 +4,32 @@ $tablet-breakpoint:     768px;
 // Overall Layout
 $container-width:		84.69565217391304%; // 974px of 1150px
 $container-max-width:	inherit;
-$container-min-width:	1150px;
+$container-min-width:	auto;
 $side-gap:				7.652173913043478%; // 88px of 1150px
 
 // Default Fonts
-$default-font-family:		Arial, Helvetica, sans-serif;
+$default-font-family:		'Ranga', cursive;
 $default-code-font-family:	'courier new', monospace, serif;
-$font-open-sans:			"Open Sans", Arial, Helvetica, sans-serif;
+$shadows-light:			    'Shadows Into Light Two', cursive;
 
 // Font Size Defaults
 $default-font-size:   15px;
 $default-line-height: 22px;
 
 $h1: 36px;
-$h2: 35px;
+$h2: 45px;
 $h3: 30px;
 $h4: 24px;
 $h5: 18px;
 $h6: 15px;
 
 // Colors:
-// yellow		=	#ffe000
-// orange		=	#ff9939
-// beige		=	#e5c99b
-// red			=	#af0000
-// dark red		=	#750101
-// light gray	=	#f2f2f2
-// white		=	#fff
-// black		=	#000
+$white:	#fff;
+$black:	#000;
 
 $default-font-color:			#000;
-$default-heading-color:			#0a93c8;
-$default-link-color:			#0a93c8;
+$default-heading-color:			#a22853;
+$default-link-color:			#a22853;
 $default-link-color-hover:		#f48222;
 $default-bg-color:				#fff;  // background-color for <body> element
 $default-button-color:			#ffe000;

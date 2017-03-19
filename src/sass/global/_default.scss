@@ -47,12 +47,12 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, table, dl, form, menu {
     margin: 0 0 $default-element-margin-bottom;
 }
 
-h1, .h1 {font-size: $h1; color: $default-heading-color; font-weight: bold; font-family: $font-open-sans; line-height: normal;}
-h2, .h2 {font-size: $h2; color: $default-heading-color; font-weight: bold; font-family: $font-open-sans; line-height: normal;}
-h3, .h3 {font-size: $h3; color: $default-heading-color; font-weight: bold; font-family: $font-open-sans; line-height: normal;}
-h4, .h4 {font-size: $h4; color: $default-heading-color; font-weight: bold; font-family: $font-open-sans; line-height: normal;}
-h5, .h5 {font-size: $h5; color: $default-heading-color; font-weight: bold; font-family: $font-open-sans; line-height: normal;}
-h6, .h6 {font-size: $h6; color: $default-heading-color; font-weight: bold; font-family: $font-open-sans; line-height: normal;}
+h1, .h1 {font-size: $h1; color: $default-heading-color; font-weight: bold; font-family: $default-font-family; line-height: normal;}
+h2, .h2 {font-size: $h2; color: $black; font-weight: bold; font-family: $shadows-light; line-height: normal;}
+h3, .h3 {font-size: $h3; color: $default-heading-color; font-weight: bold; font-family: $default-font-family; line-height: normal;}
+h4, .h4 {font-size: $h4; color: $default-heading-color; font-weight: bold; font-family: $default-font-family; line-height: normal;}
+h5, .h5 {font-size: $h5; color: $default-heading-color; font-weight: bold; font-family: $default-font-family; line-height: normal;}
+h6, .h6 {font-size: $h6; color: $default-heading-color; font-weight: bold; font-family: $default-font-family; line-height: normal;}
 
 ul {
     padding-left: 15px;
