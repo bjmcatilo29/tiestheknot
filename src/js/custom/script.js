@@ -4,7 +4,7 @@ $(document).ready(function() {
 	 * jQuery fullPagejs
 	 */
     $('#fullpage').fullpage({
-        anchors: ['link0', 'link1', 'link2', 'link3', 'link4', 'link5'],
+        anchors: ['home', 'heading', 'about-us', 'venue', 'registry', 'rsvp'],
         menu: '#nav',
         loopTop: false,
         loopBottom: false,
@@ -13,10 +13,13 @@ $(document).ready(function() {
         css3: true,
         scrollBar: true,
         afterLoad: function() {
-            $(this).find('h1').addClass('animated fadeInDownBig');
+           // $(this).find('h1').addClass('animated fadeInDownBig');
+
+           // Hide navigation bar
+           $('.nav').removeClass('show');
         },
         onLeave: function() {
-            $(this).find('h1').removeClass('animated fadeInDownBig');
+          //  $(this).find('h1').removeClass('animated fadeInDownBig');
         }
     });
 
@@ -41,12 +44,41 @@ $(document).ready(function() {
 
     // Sticky Header
     $(window).scroll(function(){
-        if ($(window).scrollTop() >= 20) {
+        if ($(window).scrollTop() >= 100) {
             $('.header').addClass('sticky');
         }
         else {
             $('.header').removeClass('sticky');
         }
+    });
+
+
+    // mobile menu icon toggler
+    function mobileIconToggle() {
+        var mobileMenu = $('.mobile-menu');
+        mobileMenu.find('.fa').toggleClass('fa-bars');
+        mobileMenu.find('.fa').toggleClass('fa-times');
+    }
+
+    // Mobile Menu
+    $('body').on('click', '.mobile-menu', function(e) {
+        e.preventDefault();
+
+        // Toggle navigation
+        $('.nav').toggleClass('show');
+
+        // Add animation
+        $('.nav').toggleClass('fadeInDown');
+
+        // Toggle Menu Icon
+        mobileIconToggle();
+
+    });
+
+    $('.nav').on('click', 'a', function(e) {
+        
+        $(this).closest('.nav').toggleClass('show');
+        mobileIconToggle();
     });
 
 

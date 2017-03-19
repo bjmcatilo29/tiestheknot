@@ -10,14 +10,11 @@
 
 // Third party
 @import 'vendor/jquery.fullPage';
+@import 'vendor/animate';
 
 // Site</div>
 @import 'section/header';
-@import 'components/info-home';
-@import 'components/info-project';
-@import 'components/info-newsletter';
-@import 'components/info-faq';
-@import 'components/info-contact';
+@import 'components/section-about';
 
 // Layout
 .container {
@@ -28,30 +25,53 @@
 
 // fullPagejs Sections
 .section {
-	// padding: 145px 0 0;
-	padding: 106px 0 0;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
+
+	.container {
+		padding-top: $header-height;
+	}
+
+	p {
+		font-family: 'Khand', sans-serif;
+		font-size: 26px;
+		line-height: 1.25em;
+	}
 }
 
 #section0 {
-	padding-top: 228px;
-	background-image: url(../images/storm_makati.jpg);
+	background: $black;
+
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,.5);
+	}
 }
 
+// About use
 #section1 {
-	// background-image: url(../images/bg_rcbc_inside.jpg);
+	background: $white;
 }
 
 #section2 {
-	// background-image: url(../images/bg_rcbc_inside.jpg);
+	background: $white;
 }
 
 #section3 {
-	// background-image: url(../images/bg_rcbc_inside.jpg);
+	background: $white;
 }
 
 #section4 {
-	background-image: url(../images/bg_rcbc.jpg);
+	background: $white;
+}
+
+#section5 {
+	background: $white;
 }

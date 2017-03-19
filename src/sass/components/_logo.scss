@@ -3,7 +3,7 @@
     @include transition(all .8s);
 	position: relative;
     width: 100%;
-    margin: 10px 0 0;
+    margin: 10% 0 10%;
     text-align: center;
 
     a,
@@ -11,8 +11,9 @@
         position: relative;
         overflow: hidden;
         display: inline-block;
-        width: 189px;
-        height: 110px;
+        width: 598px;
+        max-width: 80%;
+        height: 230px;
         margin: 20px auto;
         text-indent: -9999px;
     }
@@ -54,13 +55,13 @@
 .sticky .logo {
     float: left;
     width: auto;
-    margin: 14px 0 7px $side-gap;
+    margin: 7px 0 7px $side-gap;
     text-align: left;
 
     a,
     span {
-        width: 122px;
-        height: 70px;
+        width: 210px;
+        height: 80px;
         margin: 0;
     }
 }

@@ -26,14 +26,10 @@
     position: fixed;
     z-index: 99;
     width: 100%;
-    background: #fff;
+    height: $header-height;
 
     &.sticky {
-    	@include box-shadow(0 0 2px rgba(0,0,0,0.1));
-	    min-width: $container-min-width;
-	    padding: 1px 0;
-	    border-top: 1px solid #efefef;
-		border-bottom: 1px solid #efefef;
+    	background: rgba(0,0,0,.75);
     }
 }
 
