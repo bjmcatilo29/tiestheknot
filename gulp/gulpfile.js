@@ -27,7 +27,7 @@ gulp.task('sass',function(){
   return gulp.src(paths.src + 'sass/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
-      outputStyle:'compressed'
+      outputStyle:'expanded'
     }))
     .pipe(sourcemaps.write('/'))
     .pipe(gulp.dest(paths.dest + 'css/'))

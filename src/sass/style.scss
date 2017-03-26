@@ -1,7 +1,9 @@
+@import 'vendor/font-awesome/font-awesome';
 @import 'vendor/normalize';
 
 // Varialbe and Mixins
 @import 'global/variable';
+@import 'global/grid-generator';
 @import 'global/mixin';
 
 // Base Style 
@@ -14,7 +16,11 @@
 
 // Site</div>
 @import 'section/header';
+@import 'components/section-wtf';
 @import 'components/section-about';
+@import 'components/section-registry';
+@import 'components/section-rsvp';
+@import 'components/section-festivities';
 
 // Layout
 .container {
@@ -25,12 +31,9 @@
 
 // fullPagejs Sections
 .section {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center bottom;
 
 	.container {
-		padding-top: $header-height;
+		// padding-top: $header-height;
 	}
 
 	p {
@@ -40,38 +43,10 @@
 	}
 }
 
+.fp-scrollable {
+
+}
+
 #section0 {
 	background: $black;
-
-	&:before {
-		position: absolute;
-		top: 0;
-		left: 0;
-		content: "";
-		display: block;
-		width: 100%;
-		height: 100%;
-		background: rgba(0,0,0,.5);
-	}
-}
-
-// About use
-#section1 {
-	background: $white;
-}
-
-#section2 {
-	background: $white;
-}
-
-#section3 {
-	background: $white;
-}
-
-#section4 {
-	background: $white;
-}
-
-#section5 {
-	background: $white;
 }
