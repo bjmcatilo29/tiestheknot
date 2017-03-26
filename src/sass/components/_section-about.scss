@@ -33,13 +33,12 @@
         .about-img-left,
         .about-img-right {
             position: absolute;
-            top: 0;
             bottom: 0;
             z-index: 2;
             float: none;
-            width: auto;
+            width: 25%;
             max-width: none;
-            height: 100%;
+            height: auto;
             border-radius: 0;
         }
 
@@ -48,7 +47,8 @@
         }
 
         .about-img-right {
-            right: -400px;
+            right: -200px;
+            width: 40%;
         }
     }
 }
