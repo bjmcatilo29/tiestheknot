@@ -59,8 +59,8 @@ $(document).ready(function() {
     function mobileIconToggle() {
         if ($(window).width() < 768) {
             var mobileMenu = $('.mobile-menu');
-            mobileMenu.find('.fa').toggleClass('fa-bars');
-            mobileMenu.find('.fa').toggleClass('fa-times');
+            // mobileMenu.find('.fa').toggleClass('fa-bars');
+            // mobileMenu.find('.fa').toggleClass('fa-times');
 
             // Add animation
             $('.nav').toggleClass('fadeInDown');
