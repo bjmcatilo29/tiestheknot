@@ -3297,7 +3297,9 @@ $(document).ready(function() {
         slidesNavigation: true,
         scrollOverflow: true,
         css3: true,
-        scrollBar: true,
+        scrollBar: false,
+        fitToSectionDelay: 500,
+        paddingTop: 90,
         afterLoad: function() {
            // $(this).find('h1').addClass('animated fadeInDownBig');
 
@@ -3341,9 +3343,14 @@ $(document).ready(function() {
 
     // mobile menu icon toggler
     function mobileIconToggle() {
-        var mobileMenu = $('.mobile-menu');
-        mobileMenu.find('.fa').toggleClass('fa-bars');
-        mobileMenu.find('.fa').toggleClass('fa-times');
+        if ($(window).width() < 768) {
+            var mobileMenu = $('.mobile-menu');
+            mobileMenu.find('.fa').toggleClass('fa-bars');
+            mobileMenu.find('.fa').toggleClass('fa-times');
+
+            // Add animation
+            $('.nav').toggleClass('fadeInDown');
+        }
     }
 
     // Mobile Menu
@@ -3352,9 +3359,6 @@ $(document).ready(function() {
 
         // Toggle navigation
         $('.nav').toggleClass('show');
-
-        // Add animation
-        $('.nav').toggleClass('fadeInDown');
 
         // Toggle Menu Icon
         mobileIconToggle();

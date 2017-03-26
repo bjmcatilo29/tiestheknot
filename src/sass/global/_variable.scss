@@ -4,11 +4,11 @@ $desktop-breakpoint:        1025px;
 $largedesktop-breakpoint:   1300px;
 
 // Overall Layout
-$container-width:		84.69565217391304%; // 974px of 1150px
+$container-width:		90%; // 974px of 1150px
 $container-max-width:	inherit;
 $container-min-width:	auto;
-$side-gap:				7.652173913043478%; // 88px of 1150px
-$header-height:         110px;
+$side-gap:				5%; // 88px of 1150px
+$header-height:         90px;
 
 // Default Fonts
 $default-font-family:		'Ranga', cursive;
@@ -31,8 +31,8 @@ $white:	#fff;
 $black:	#000;
 
 $default-font-color:			#000;
-$default-heading-color:			#a22853;
-$default-link-color:			#a22853;
+$default-heading-color:			#d3af4e;
+$default-link-color:			#d3af4e;
 $default-link-color-hover:		#f48222;
 $default-bg-color:				#fff;  // background-color for <body> element
 $default-button-color:			#ffe000;

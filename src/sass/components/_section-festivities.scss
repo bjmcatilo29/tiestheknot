@@ -1,0 +1,26 @@
+.section-festivities {
+    @extend %clearfix;
+    position: relative;
+    overflow: hidden;
+	
+    .church {
+        margin-top: 20px;
+    }
+
+    .reception {
+        margin-top: 20px;
+    }
+
+    @include media(">=tablet") {
+        .church {
+            float: left;
+            width: 30%;
+            margin-right: 5%;
+        }
+
+        .reception {
+            float: right;
+            width: 65%;
+        }
+    }
+}

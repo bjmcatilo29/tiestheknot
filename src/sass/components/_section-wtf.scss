@@ -1,0 +1,29 @@
+.section-wtf {
+    position: relative;
+    
+    .container {
+        width: 100%;
+    }
+
+    .relative {
+        padding: 0 0 0 $side-gap;
+    }
+
+    .object {
+
+    }
+
+    @include media(">=desktop") {
+        .object {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: auto;
+            height: 100%;
+        }
+
+        .relative {
+            width: 42%;
+        }
+    }
+}

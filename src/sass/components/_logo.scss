@@ -11,9 +11,9 @@
         position: relative;
         overflow: hidden;
         display: inline-block;
-        width: 598px;
+        width: 461px;
         max-width: 80%;
-        height: 230px;
+        height: 288px;
         margin: 20px auto;
         text-indent: -9999px;
     }
@@ -24,44 +24,57 @@
         top: 0;
         width: 100%;
     }
+
+    .logo-sakura {
+        
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    @include media("portrait") {
+        margin: 25% 0 25%;
+    }
+
+    @include media("landscape") {
+        margin: 5% 0 5%;
+
+        a,
+        span {
+            max-width: 230px;
+        }
+    }
+
+    @include media(">=tablet") {
+        margin-top: 18%;
+
+        a,
+        span {
+            max-width: 80%;
+        }
+    }
 }
-
-// Style 2
-// .logo {
-// 	float: left;
-// 	position: relative;
-//     margin: 14px 0 7px 35px;
-
-//     a,
-//     span {
-//         position: relative;
-//         overflow: hidden;
-//         display: inline-block;
-//         width: 122px;
-//         height: 70px;
-//         text-indent: -9999px;
-//     }
-    
-//     img {
-//         position: absolute;
-//         left: 0;
-//         top: 0;
-//         width: 100%;
-//     }
-// }
-
 
 // Style 3
 .sticky .logo {
     float: left;
     width: auto;
-    margin: 7px 0 7px $side-gap;
+    margin: 17px 0 0 $side-gap;
     text-align: left;
 
     a,
     span {
-        width: 210px;
-        height: 80px;
+        width: 310px;
+        height: 70px;
         margin: 0;
+    }
+
+    .logo-sakura {
+        display: none;
+    }
+
+    .logo-text {
+        display: inherit;
     }
 }

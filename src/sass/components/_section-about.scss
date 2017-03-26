@@ -1,9 +1,15 @@
 .section-about {
+    position: relative;
+    overflow: hidden;
 	
     .about-img-left,
     .about-img-right {
         width: 45%;
         max-width: 323px;
+
+        @include media("<desktop") {
+            border-radius: 50%;
+        }
     }
 
     .about-img-left {
@@ -14,25 +20,35 @@
         float: right
     }
 
-    @include media(">=largedesktop") {
+    @include media(">=desktop") {
         .container {
-            width: 45%;
+            width: 100%;
+        }
+
+        .relative {
+            padding-left: 350px;
+            padding-right: 350px;
         }
 
         .about-img-left,
         .about-img-right {
             position: absolute;
-            top: 50%;
+            top: 0;
+            bottom: 0;
+            z-index: 2;
             float: none;
-            margin-top: -161px + ($header-height/2);
+            width: auto;
+            max-width: none;
+            height: 100%;
+            border-radius: 0;
         }
 
         .about-img-left {
-            left: 20px;
+            left: -50px;
         }
 
         .about-img-right {
-            right: 20px;
+            right: -400px;
         }
     }
 }

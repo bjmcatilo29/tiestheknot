@@ -42,7 +42,6 @@ $breakpoints: (
 // tablet-desktop
 // @include media(">=tablet") {}
 
-
 // Linear Gradient
 @mixin gradient($background-color: #bcbcbc, $background-top: #e5e5e5, $background-bottom: #9d9d9d) {
 	background: $background-color;
