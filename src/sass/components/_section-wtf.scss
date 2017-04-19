@@ -6,7 +6,7 @@
     }
 
     .relative {
-        padding: 0 0 0 $side-gap;
+        padding: 0 $side-gap 0 $side-gap;
     }
 
     .object {
@@ -17,13 +17,37 @@
         .object {
             position: absolute;
             bottom: 0;
-            right: 0;
+            right: 0px;
             width: auto;
-            height: 100%;
+            height: 75%;
         }
 
         .relative {
             width: 42%;
+        }
+
+        h2 {
+            font-size: 54px;
+        }
+
+        p {
+            font-size: 26px;
+        }
+    }
+
+    @include media("<=tablet") {
+        h2 {
+            padding-top: 10px;
+        }
+    }
+
+    @include media("<tablet") {
+        h2 {
+            font-size: 34px;
+        }
+
+        p {
+            font-size: 18px !important;
         }
     }
 }

@@ -10,6 +10,8 @@
     }
 
     @include media(">=desktop") {
+
+
         .object {
             position: absolute;
             bottom: 0;
@@ -19,8 +21,29 @@
         }
 
         .text-content {
-            margin-left: 60%;
+            margin-left: 65%;
         }
 
+        .text-content p {
+            line-height: 2em;
+        }
+
+    }
+
+    @include media("<=tablet") {
+        text-align: center;
+        h2 {
+            padding-top: 10px;
+        }
+    }
+
+    @include media("<tablet") {
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
     }
 }
