@@ -2,13 +2,51 @@
     @extend %clearfix;
     position: relative;
     overflow: hidden;
-	
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+
+    p {
+        position: relative;
+        z-index: 100;
+    }
+
     .church {
         margin-top: 20px;
+        position: relative;
+    }
+
+    .clearfix.center {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .lourdes {
+        border-radius: 50%;
+        width: 258px;
+        height: 258px;
+        z-index: 200;
+    }
+
+    .cdc {
+        width: 420px;
+        height: 420px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        z-index: -3;
     }
 
     .reception {
         margin-top: 20px;
+    }
+
+    h2, .h2 {
+        color: #d3af4e;
+    }
+
+    h3 {
+        position: relative;
+        z-index: 100;
     }
 
     @include media(">=tablet") {
@@ -21,6 +59,37 @@
         .reception {
             float: right;
             width: 65%;
+        }
+        .hidden-mobile {
+            display: none;
+        }
+
+        .mobile-only {
+            display: none;
+        }
+
+    }
+
+    @include media("<tablet") {
+        text-align: center;
+        .hidden-mobile {
+            display: none;
+        }
+
+        .reception {
+            margin-top: 0px;
+        }
+        
+        .mobile-only {
+            display: block;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 20px;
         }
     }
 }

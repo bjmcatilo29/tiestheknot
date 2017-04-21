@@ -4,6 +4,11 @@
 .mobile-menu		{display: none;}
 .nav				{}
 
+
+#nav-hidden {
+	display: none;
+}
+
 .sticky {
 	.mobile-menu	{display: block;}
 	.nav			{display: none;}
@@ -30,7 +35,7 @@
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	background: rgba(0,0,0, .7);
+	background: transparent;
 	width: 100%;
 	border-top: 1px solid rgba(255, 255, 255, .1);
   	border-bottom: 1px solid rgba(255, 255, 255, .1);
@@ -72,9 +77,6 @@
 		top: 0;
 		left: auto;
 		right: 0;
-		bottom: auto;
-		background: transparent;
-
 		float: right;
 		width: auto;
 		margin: 30px $side-gap 0 0;
@@ -117,4 +119,5 @@
 			}
 		}
 	}
+	
 }

@@ -1,11 +1,13 @@
 .section-rsvp {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
     
     .container {
         padding: 20px 0;
     }
 
-    h2 {
-
+    h2, .h2 {
+        color: #d3af4e;
     }
 
     input {
