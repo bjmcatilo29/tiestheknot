@@ -4,7 +4,7 @@ $(document).ready(function() {
 	 * jQuery fullPagejs
 	 */
     $('#fullpage').fullpage({
-        anchors: ['home', 'heading', 'about-us', 'venue', 'registry', 'rsvp'],
+        anchors: ['home', 'heading', 'about-us', 'motif','venue', 'registry', 'rsvp'],
         menu: '#nav',
         loopTop: false,
         loopBottom: false,

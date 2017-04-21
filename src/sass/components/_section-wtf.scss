@@ -1,8 +1,17 @@
 .section-wtf {
     position: relative;
-    
+    background-color: rgba(0,0,0,0.8);
+    color: white;
     .container {
         width: 100%;
+    }
+
+    h2, .h2 {
+        color: rgba(248, 121, 155, 1);
+    }
+
+    .gold {
+        color: #d3af4e;
     }
 
     .relative {

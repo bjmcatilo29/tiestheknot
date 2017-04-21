@@ -1,14 +1,16 @@
 .section-registry {
     position: relative;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
 
-    .object {
-        
+    h2, .h2 {
+        color: rgba(248, 121, 155, 1);
     }
 
-    .text-content {
-
+    .gold {
+        color: #d3af4e;
     }
-
+    
     @include media(">=desktop") {
 
 

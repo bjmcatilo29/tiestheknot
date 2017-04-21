@@ -1,28 +1,13 @@
 .section-about {
     position: relative;
     overflow: hidden;
-	
-    .about-img-left,
-    .about-img-right {
-        width: 45%;
-        max-width: 323px;
-
-        @include media("<desktop") {
-            border-radius: 50%;
-        }
-    }
-
-    .about-img-left {
-        float: left;
-    }
-
-    .about-img-right {
-        float: right
-    }
+	background-color: rgba(0,0,0,0.8);
+    
 
     @include media(">=desktop") {
         .container {
             width: 100%;
+            text-align: center;
         }
 
         .relative {
