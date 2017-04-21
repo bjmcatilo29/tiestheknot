@@ -60,7 +60,7 @@
 		color: $white;
 		font-size: 26px;
 		font-weight: bold;
-		font-family: myriad-pro, "Open Sans" Arial, Helvetica, sans-serif;
+		font-family: Ranga, "Open Sans" Arial, Helvetica, sans-serif;
 		text-decoration: none;
 	}
 
@@ -101,6 +101,7 @@
 			line-height: 35px;
 			margin-left: 15px;
 			margin-right: 15px;
+			font-family: $default-font-family;
 		}
 
 		// Mobile
